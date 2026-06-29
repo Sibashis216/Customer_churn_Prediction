@@ -238,71 +238,6 @@ Interpretation:    ✓ Robust performance across folds
 
 ---
 
-## 📁 Project Structure
-
-```
-customer-churn-prediction/
-│
-├── README.md                           # This file
-├── LICENSE                             # MIT License
-├── requirements.txt                    # Project dependencies
-│
-├── data/
-│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv    # Raw dataset (7,043 records)
-│   └── data_dictionary.md              # Feature descriptions
-│
-├── notebooks/
-│   ├── 01_EDA_Analysis.ipynb          # Exploratory Data Analysis
-│   ├── 02_Preprocessing.ipynb          # Data Cleaning & Feature Engineering
-│   └── 03_Model_Training.ipynb         # Model Development & Evaluation
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py                  # Data loading utilities
-│   ├── preprocessing.py                # Data preprocessing pipeline
-│   ├── feature_engineering.py          # Feature creation & transformation
-│   ├── model_trainer.py                # Model training functions
-│   ├── model_evaluator.py              # Evaluation & metrics
-│   └── predictor.py                    # Prediction on new data
-│
-├── models/
-│   ├── churn_model.pkl                 # Trained Random Forest model (22MB)
-│   └── encoders.pkl                    # Label encoders for features (1.6KB)
-│
-├── results/
-│   ├── churn_analysis_visualizations.png    # 12-panel dashboard (1.1MB)
-│   ├── churn_analysis_report.txt            # Comprehensive report (24KB)
-│   ├── model_performance_summary.json       # Metrics in JSON format
-│   └── feature_importance.csv               # Feature rankings
-│
-├── api/
-│   ├── app.py                          # Flask API endpoint
-│   ├── config.py                       # Configuration settings
-│   └── requirements_api.txt             # API dependencies
-│
-├── scripts/
-│   ├── train_model.py                  # Model training script
-│   ├── evaluate_model.py                # Model evaluation script
-│   ├── make_predictions.py              # Batch prediction script
-│   └── generate_report.py               # Report generation
-│
-├── config/
-│   ├── model_config.yaml               # Model hyperparameters
-│   ├── feature_config.yaml             # Feature configurations
-│   └── deployment_config.yaml          # Deployment settings
-│
-├── tests/
-│   ├── test_preprocessing.py           # Unit tests
-│   ├── test_model.py                   # Model tests
-│   └── test_predictions.py             # Prediction tests
-│
-└── docker/
-    ├── Dockerfile                      # Docker image
-    └── docker-compose.yml              # Docker compose config
-```
-
----
-
 ## ⚙️ Technologies & Dependencies
 
 ### Core Technologies
@@ -318,13 +253,6 @@ customer-churn-prediction/
 | **Seaborn** | 0.11+ | Statistical visualization |
 | **Pickle** | Built-in | Model serialization |
 
-### Optional Technologies
-- **Flask/FastAPI** - API deployment
-- **Docker** - Containerization
-- **Jupyter** - Interactive notebooks
-- **PostgreSQL** - Data storage
-- **Redis** - Caching layer
-- **Airflow** - Workflow orchestration
 
 ### System Requirements
 ```
@@ -351,7 +279,7 @@ Recommended:
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/customer-churn-prediction.git
+git clone https://github.com/Sibashis216/Customer_churn_Prediction.git
 cd customer-churn-prediction
 ```
 
